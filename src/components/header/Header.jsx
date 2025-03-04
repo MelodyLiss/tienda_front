@@ -5,13 +5,12 @@ import { NavBar } from '../navBar/NavBar';
 
 export const Header = () => {
     return (
-        <header>
+        <header className="pb-6">
             <div className="flex justify-center items-center py-4">
                 <img src={logo_perrita} alt="Logo" />
                 <img src={titulo_y_eslogan} alt="Logo" />
                 <img src={logo_gatita} alt="Logo" />
             </div>
-
             <NavBar/>
         </header>
     );
