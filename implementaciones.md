@@ -13,10 +13,7 @@ iconos :
 
  -  🌸 NavClientTop 
 
-    - Arreglar el tema del último li que queda desnivelado
-    - Corregir el problema del padding al hacer hover
-
--  🥀 Header
+ -   🥀 Header
 
     - Incluye banner de la tienda
     - barra de navegación
