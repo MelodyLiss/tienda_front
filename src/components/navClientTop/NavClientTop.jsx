@@ -1,38 +1,30 @@
 export const NavClientTop = () => {
     return (
-        <nav className="bg-red-500 p-1 pr-40 text-amber-50">
-            <ul className="flex justify-end items-center space-x-3">
-                <li className="hover:bg-amber-600 p-1.5 rounded-md">
-                    <a href="/">
+        <nav className="bg-red-500  pr-40 text-amber-50">
+            <ul className="flex justify-end items-center">
+                <li className="p-2">
+                    <a className="rounded-md py-2 px-4 hover:bg-red-800" href="/">
                         <i className="fa-regular fa-user"></i>
-                        <span className=" pl-1">Iniciar sesión / registrarse</span>
+                        <span className=" pl-1">Iniciar sesión</span>
                     </a>
                 </li>
-                <li className="hover:bg-amber-600 p-1.5 rounded-md">
-                    <a href="/">
+                <li className="p-2">
+                    <a className="rounded-md py-2 px-4 hover:bg-red-800" href="/">
                         <i className="fa-regular fa-heart"></i>
                         <span className=" pl-1">2</span>
                     </a>
                 </li>
 
-                <li className="hover:bg-amber-600 p-1.5 rounded-md">
-                    <a href="/">
+                <li className="p-2">
+                    <a className="rounded-md py-2 px-4 hover:bg-red-800" href="/">
                         <i className="fa-solid fa-cart-shopping"></i>
                         <span className=" pl-1">3</span>
                     </a>
                 </li>
 
-                <li className="hover:bg-amber-600 p-1.5 rounded-md">
-                    <a href="/">
+                <li className="p-2">
+                    <a className="rounded-md py-2 px-4 hover:bg-red-800" href="/" >
                         <i className="fa-regular fa-lightbulb"></i>
-                        
-                    </a>
-                </li>
-
-                <li className="hidden">  {/* ver porque la ultima queda desfasada */}
-                    <a href="/">
-                        <i className="fa-regular fa-lightbulb"></i> {/* eliminar luego */}
-                        
                     </a>
                 </li>
                 
@@ -40,3 +32,4 @@ export const NavClientTop = () => {
         </nav>
     );
 }
+
