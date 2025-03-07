@@ -1,18 +1,18 @@
-import { useState } from 'react'
 import './App.css'
-import { NavClientTop } from './components/navClientTop/NavClientTop'
-import { Header } from './components/header/Header'
-import { ProductosPage } from './pages/productos/ProductosPage'
-import { Footer } from './components/footer/Footer'
-function App() {
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { ListadosProductosPage } from './pages/productos/ListadosProductosPage'
+import { LayoutMain } from './layout/LayoutMain'
+import { ProductoIndividualPage } from './pages/productos/productoIndividual'
 
+function App() {
   return (
-    <>
-    <NavClientTop/>
-    <Header/>
-    <ProductosPage/>
-    <Footer/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LayoutMain />}>
+          <Route index element={<ProductoIndividualPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Carousel } from "../../components/carousel/Carousel";
-import { FormFilter } from "../../components/formFilter/FormFilter";
-import { Card } from "../../components/card/Card";
-import { Button } from "../../components/custom/button/Button";
+import { Carousel } from "../../components/carousel/Carousel.jsx";
+import { FormFilter } from "../../components/formFilter/FormFilter.jsx";
+import { Card } from "../../components/card/Card.jsx";
+import { Button } from "../../components/custom/button/Button.jsx";
 import placas from "../../data/placas.js"
 
-export const ProductosPage = () => {
+export const ListadosProductosPage = () => {
 
     const [plaquitas, setPlaquitas] = useState(placas)
 
