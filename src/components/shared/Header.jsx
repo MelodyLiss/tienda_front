@@ -1,7 +1,7 @@
 import logo_perrita from '../../assets/img/logo/logo_perrita.png';
 import titulo_y_eslogan from '../../assets/img/logo/titulo_y_eslogan.png';
 import logo_gatita from '../../assets/img/logo/logo_gatita.png';
-import { NavBar } from '../navBar/NavBar';
+import { NavBar } from '../shared/NavBar';
 
 export const Header = () => {
     return (

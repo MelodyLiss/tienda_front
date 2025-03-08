@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
-import { NavClientTop } from "../components/navClientTop/NavClientTop";
-import { Header } from "../components/header/Header";
-import { Footer } from "../components/footer/Footer";
+import { NavClientTop } from "../components/shared/NavClientTop";
+import { Header } from "../components/shared/Header";
+import { Footer } from "../components/shared/Footer";
 
-export const LayoutMain = () => {
+export const MainLayout = () => {
     return (
         <div className="flex flex-col min-h-screen">
             <NavClientTop />
