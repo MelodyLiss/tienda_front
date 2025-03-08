@@ -29,7 +29,7 @@ export const ProductListPage = () => {
                                 imagen={producto.imagen}
                             />
                             <div className="w-full flex justify-center mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <Button />
+                                <Button text="Ver opciones" />
                             </div>
                         </div>
                     ))}

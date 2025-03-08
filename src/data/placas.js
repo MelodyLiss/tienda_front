@@ -3,7 +3,7 @@ const placas = [
         "id": 1,
         "nombre": "amethys",
         "categoria":"cosmica",
-        "descripcion": "Placa de amethys",
+        "descripcion": "Hermosa plaquita con tonos morados",
         "precio": 5000,
         "imagen": "cosmicas_amethys",
         "imagen2": "cosmicas_amethys_c",

@@ -11,24 +11,28 @@ export const ProductDetailPage = () => {
 
 
     return (
-        <main>
+        <main className="w-8/12 mx-auto">
 
-            <section className="flex  w-3/4 mx-auto">
-            <ProductGallery
-            className="w-3/5"
-            imagen={producto.imagen}
-            imagen2={producto.imagen2}
-            imagen3={producto.imagen3}
-            />
-            
-            <ProductForm 
-            className="w-1/2"
-            nombre={producto.nombre}
-            categoria={producto.categoria}
-            descripcion={producto.descripcion}
-            precio={producto.precio}
-            />
+            <section className="flex gap-4">
+                <div className="w-1/2 my-auto">
+                    <ProductGallery
+                        imagen={producto.imagen}
+                        imagen2={producto.imagen2}
+                        imagen3={producto.imagen3}
+                    />
+                </div>
+
+                <div className="w-1/2">
+                    <ProductForm
+                        nombre={producto.nombre}
+                        categoria={producto.categoria}
+                        descripcion={producto.descripcion}
+                        precio={producto.precio}
+                    />
+                </div>
             </section>
+
+
         </main>
     );
 };

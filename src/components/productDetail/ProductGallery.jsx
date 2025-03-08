@@ -1,6 +1,6 @@
 export const ProductGallery = ({ imagen, imagen2, imagen3 }) => {
     return (
-        <section className="flex flex-1 p-2 items-center gap-2">
+        <section className="flex p-2 items-center gap-2">
             {/* Imágenes secundarias */}
             <div className="w-2/12 flex flex-col justify-center items-center gap-2">
                 <div className="border-2 border-gray-300 rounded-md hover:border-orange-400">
