@@ -18,10 +18,9 @@ export const PetPhotoUpload = () => {
 
     return (
         <div className="mb-4 border-b-2 border-dashed border-orange-500 p-4">
-            {/* Título */}
+
             <h2 className="text-2xl font-bold mb-4">Sube la fotografía de tu doggys o michi</h2>
 
-            {/* Primer input de archivo - Estilo principal */}
             <div className="mb-4">
                 <input
                     type="file"
@@ -52,7 +51,6 @@ export const PetPhotoUpload = () => {
                 </label>
             </div>
 
-            {/* Segundo input de archivo - Estilo similar pero con texto diferente */}
             <div className="mb-4">
                 <input
                     type="file"
@@ -83,9 +81,9 @@ export const PetPhotoUpload = () => {
                 </label>
             </div>
 
-            {/* Texto informativo */}
+
             <p className="text-md text-gray-800 mt-2">
-                Se eligirá una de las 2 opciones, recuerda proporcionar la fotografía con la mejor calidad posible y sin cortes en su cabecita
+                Se eligirá una de las 2 opciones, recuerde proporcionar la fotografía con la mejor calidad posible y sin cortes en su cabecita
             </p>
         </div>
     );

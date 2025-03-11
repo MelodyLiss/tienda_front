@@ -1,9 +1,10 @@
 import { useState } from "react";
 
 import { ProductGallery } from "../components/productDetail/ProductGallery";
-import placas from "../data/placas";
 import { ProductForm } from "../components/productDetail/ProductForm";
+import { ProductInformation } from "../components/productDetail/ProductInformation";
 
+import placas from "../data/placas";
 
 export const ProductDetailPage = () => {
 
@@ -30,6 +31,10 @@ export const ProductDetailPage = () => {
                         precio={producto.precio}
                     />
                 </div>
+            </section>
+
+            <section>
+                <ProductInformation />
             </section>
 
 
