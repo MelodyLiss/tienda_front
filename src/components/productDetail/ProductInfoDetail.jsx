@@ -1,5 +1,5 @@
 
-import img_demo from '../../../public/img/imagen_demo_1.png'
+import img_demo from '/img/imagen_demo_1.png'
 export const ProductInfoDetail = () => {
     return (
         <div>
