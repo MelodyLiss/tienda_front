@@ -24,7 +24,7 @@ export const ProductForm = ({ nombre, categoria, descripcion, precio }) => {
     }
 
     return (
-        <section className="flex flex-col ">
+        <section className="flex flex-col gap-4">
 
             <div className="mb-4"> {/* descripción base */}
                 <h1 className="text-5xl font-bold uppercase " >Plaquita {nombre}</h1>
@@ -32,9 +32,9 @@ export const ProductForm = ({ nombre, categoria, descripcion, precio }) => {
                 <p className="text-lg ">{descripcion}</p>
             </div>
 
-            <form className="">
-                <div className="mb-4 flex gap-4"> {/* modelo de la plaquita */}
-                    <h2 className="text-2xl my-auto font-bold uppercase">Modelo</h2>
+            <form className="flex flex-col gap-4">
+                <div className="mb-4 flex flex-col sm:flex-row gap-4"> {/* modelo de la plaquita */}
+                    <h2 className="text-2xl font-bold uppercase">Modelo</h2>
                     <div className="flex gap-4">
                         <label className="flex items-center gap-2">
                             <input type="radio" name="modelo" value="huesito" className="hidden peer" />
@@ -99,7 +99,7 @@ export const ProductForm = ({ nombre, categoria, descripcion, precio }) => {
 
                 <p className="text-center text-sm text-gray-600">Si deseas otra plaquita con este diseño pero con otros datos, debes hacerlo de manera individual</p>
 
-                <div className="mb-4 flex gap-4 justify-between px-4">
+                <div className="mb-4 flex flex-col sm:flex-row justify-between gap-4 px-4">
                     <div> {/* cantidad de plaquitas */}
                         <label className="font-bold uppercase mr-4" htmlFor="cantidad">Cantidad</label>
                         <input className="border border-gray-600 rounded-lg p-1 bg-white text-gray-700 w-20" type="number" name="cantidad" id="cantidad" min={1} max={10} value={cantidad} onChange={handleCantidad}/>

@@ -1,8 +1,8 @@
 export const ProductGallery = ({ imagen, imagen2, imagen3 }) => {
     return (
-        <section className="flex p-2 items-center gap-2">
+        <section className="flex flex-col sm:flex-row p-2 items-center gap-4">
             {/* Imágenes secundarias */}
-            <div className="w-2/12 flex flex-col justify-center items-center gap-2">
+            <div className="w-full sm:w-2/12 flex flex-col justify-center items-center gap-2">
                 <div className="border-2 border-gray-300 rounded-md hover:border-orange-400">
                     <img src={`/img/ejemplo_producto/${imagen}.png`} alt="plaquita forma huesito" />
                     <p className="text-center text-xs pb-2">4,5 x 2,5 cm</p>
@@ -20,7 +20,7 @@ export const ProductGallery = ({ imagen, imagen2, imagen3 }) => {
             </div>
 
             {/* Imagen principal */}
-            <div className="flex-1 flex justify-center items-center">
+            <div className="w-full sm:flex-1 flex justify-center items-center">
                 <img src={`/img/ejemplo_producto/${imagen}.png`} alt="plaquita forma huesito" />
             </div>
         </section>

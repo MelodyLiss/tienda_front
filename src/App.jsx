@@ -10,15 +10,13 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainLayout />}>
-          {/* <Route index element={<ProductListPage />} />    */}
-          {/* <Route index element={<ProductDetailPage />} /> */}
-          <Route index element={<LoginPage />} />
-
+          <Route index element={<ProductListPage />} />
+          <Route path="product/:id" element={<ProductDetailPage />} />
+          <Route path="login" element={<LoginPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
   )
-
 }
 
 export default App

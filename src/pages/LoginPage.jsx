@@ -61,20 +61,20 @@ export const LoginPage = () => {
 
                     <div className="flex gap-4 flex-wrap justify-center">
                         <button className="flex-1 text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors">
-                            <a href=""><i className="fa-brands fa-facebook"></i></a>
-                        </button>
+<a href=""><i className="fa-brands fa-facebook"></i></a>
+</button>
                         <button className="flex-1 text-center bg-red-600 text-white py-2 rounded-md hover:bg-red-700 transition-colors">
-                            <a href=""><i className="fa-brands fa-google"></i></a>
-                        </button>
+<a href=""><i className="fa-brands fa-google"></i></a>
+</button>
                         <button className="flex-1 text-center bg-black text-white py-2 rounded-md hover:bg-gray-800 transition-colors">
-                            <a href=""><i className="fa-brands fa-apple"></i></a>
-                        </button>
+<a href=""><i className="fa-brands fa-apple"></i></a>
+</button>
                     </div>
 
                 </form>
 
             </section>
 
-        </main>
+                </main>
     );
 }

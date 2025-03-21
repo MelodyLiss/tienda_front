@@ -11,7 +11,7 @@ export const ProductListPage = () => {
     
 
     return (
-        <main className="w-8/12 mx-auto">
+        <main className="w-11/12 lg:w-8/12 mx-auto">
             <Carousel />
 
             {/* productos */}
@@ -19,7 +19,7 @@ export const ProductListPage = () => {
                 <h1 className="text-5xl font-bold text-center my-10 uppercase">Plaquitas Personalizadas</h1>
                 <FormFilter />
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {productos.map((producto, index) => (
                         <div className="flex flex-col items-center group hover:cursor-pointer" key={index}>
                             <Card
