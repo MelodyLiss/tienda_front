@@ -2,12 +2,25 @@ import { useState } from "react";
 
 import { PetPhotoUpload } from "./ui/PetPhotoUpload";
 import { Button } from "../shared/ui/Button";
+import { FormInput } from '../shared/ui/FormInput';
+
 export const ProductForm = ({ nombre, categoria, descripcion, precio }) => {
 
     const [cantidad, setCantidad] = useState(1);
+    const [formData, setFormData] = useState({
+        nombreMascota: '',
+        telefono: ''
+    });
 
     const handleCantidad = (e) => {
         setCantidad(e.target.value);
+    }
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
     }
 
     return (
@@ -62,15 +75,25 @@ export const ProductForm = ({ nombre, categoria, descripcion, precio }) => {
                     <PetPhotoUpload />
 
                     <div>
-                        <div className="mb-2 flex gap-2 items-center" >
-                            <label className="font-bold uppercase mr-4 " htmlFor="nombre">Nombre mascota </label>
-                            <input className="flex-1 border border-gray-600 rounded-lg px-4 py-2 bg-white text-gray-700" type="text" name="nombre" id="nombre" placeholder="ingrese el nombre de su doggy o michi" />
-                        </div>
+                        {/* Reemplazando los inputs originales con el componente FormInput */}
+                        <FormInput
+                            label="Nombre mascota"
+                            name="nombreMascota"
+                            id="nombreMascota"
+                            placeholder="ingrese el nombre de su doggy o michi"
+                            value={formData.nombreMascota}
+                            onChange={handleChange}
+                        />
 
-                        <div className="mb-2 flex gap-2 items-center">
-                            <label className="font-bold uppercase mr-4 " htmlFor="telefono">Teléfono contacto</label>
-                            <input className="flex-1 border border-gray-600 rounded-lg px-4 py-2  bg-white text-gray-700" type="tel" name="telefono" id="telefono" placeholder="ingrese el teléfono para el reverso de la plaquita" />
-                        </div>
+                        <FormInput
+                            label="Teléfono contacto"
+                            type="tel"
+                            name="telefono"
+                            id="telefono"
+                            placeholder="ingrese el teléfono para el reverso de la plaquita"
+                            value={formData.telefono}
+                            onChange={handleChange}
+                        />
                     </div>
                 </div>
 
@@ -93,16 +116,6 @@ export const ProductForm = ({ nombre, categoria, descripcion, precio }) => {
                 </div>
 
             </form>
-
-
-
-
-
-
-
-
-
-
         </section>
     )
 }
