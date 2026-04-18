@@ -9,7 +9,7 @@ export const Card = (plaquita) => {
 
             <div className="p-2 flex justify-between items-end">
                 <div className="flex flex-col text-lg">
-                    <p>Diseño<span className='font-bold'>"{plaquita.nombre}"</span></p>
+                    <p>Diseño<span className='font-bold'>&quot;{plaquita.nombre}&quot;</span></p>
                     <p className='italic'>Temática <span className='tematica'>{plaquita.categoria}</span></p>
                 </div>
 

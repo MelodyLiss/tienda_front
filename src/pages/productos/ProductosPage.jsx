@@ -7,7 +7,7 @@ import placas from "../../data/placas.js"
 
 export const ProductosPage = () => {
 
-    const [plaquitas, setPlaquitas] = useState(placas)
+    const [plaquitas] = useState(placas)
 
     return (
         <main className="w-8/12 mx-auto">

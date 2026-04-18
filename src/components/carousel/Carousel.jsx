@@ -1,6 +1,6 @@
 import banner_1 from '../../assets/img/carrusel/banner_1.jpg';
-import banner_2 from '../../assets/img/carrusel/banner_2.jpg';
-import banner_3 from '../../assets/img/carrusel/banner_3.jpg';
+// import banner_2 from '../../assets/img/carrusel/banner_2.jpg';
+// import banner_3 from '../../assets/img/carrusel/banner_3.jpg';
 
 
 export const Carousel = () => {
